@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Solway', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar{
+    width: 85%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img{
+    width: 100px;
+}
+
+.list{
+    display: inline;
+    margin: 0px 20px;
+}
+
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.link:hover{
+    color: blue;
+}
+
+.title{
+    margin: 13% 0px 0px 8%;
+}
+
+.title h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#lastname{
+    color: orange;
+}
+
+.download{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 30px 0px;
+}
+
+
+.images{
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 45%;
+    height: 80%;
+}
+
+.imageGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+}
+
+.images:hover #shape{
+    bottom: 70px;
+}
+
+.images:hover #men{
+    left: 40%;
+}
+
+#about{
+    margin: 13% 8% 0px 8%;
+}
+.about-head{
+    text-align: center;
+}
+
+.about-head h2{
+    font-size: 30px;
+}
+
+.about-head span{
+    font-size: 20px;
+    color: green;
+}
+
+/* grid */
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-image img{
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.about-details{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.informations{
+    margin: 1rem 0 0 0;
+}
+
+.info-box{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+
+.info-box span{
+    margin-left: 1rem;
+}
+
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.bar-content{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.skill-image>img{
+    width: 60%;
+    padding-left: 8rem;
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+.html-bar{
+    width: 94%;
+    background-color: orange;
+}
+
+.css-bar{
+    width: 92%;
+    background-color: orange;
+}
+
+.js-bar{
+    width: 90%;
+    background-color: orange;
+}
+
+.react-bar{
+    width: 87%;
+    background-color: orange;
+}
+
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.c-icon,.up-arrow{
+   width: 50px;
+   height: 50px;
+   margin: 0px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+}
+
+.c-icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,orange,rgb(253, 150, 150),rgb(251, 255, 251));
+}
+
+.c-icon i{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.c-icon:hover i{
+    color: #ffff;
+    animation: shake 0.75s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(10deg);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+
+    30%{
+        transform: rotate(10deg);
+    }
+
+    40%{
+        transform: rotate(-10deg);
+}
+
+}
+
+footer{
+    margin: 30px 0px;
+}
+
+footer p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.up-arrow{
+    background-image: linear-gradient(to bottom right,yellow,orange,rgb(253, 150, 150),rgb(251, 255, 251));
+    float: right;
+    margin: 0px 20px 20px 0px;
+}
+
+.up-arrow:hover i{
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(243, 246, 249);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(86, 86, 86);
+    border-radius: 10px;
+}
